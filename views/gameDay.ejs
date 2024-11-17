@@ -1,0 +1,40 @@
+<%- include('partials/topBoilerPlate') %>
+
+    <div class="match-container">
+        <div class="teams">
+            <div class="home-team">
+                <!-- Home team logo -->
+                <img src="<%= homeTeam.logo %>">
+                <!-- Home team name -->
+                <p class="team-name">
+                    <%= homeTeam.name %>
+                </p>
+            </div>
+            <h3>VS</h3>
+            <div class="away-team">
+                <!-- Away team logo -->
+                <img src="<%= awayTeam.logo %>">
+                <!-- Away team name -->
+                <p class="team-name">
+                    <%= awayTeam.name %>
+                </p>
+            </div>
+        </div>
+        <div class="match-data-container">
+            <p>
+                <!-- Time -->
+                <%= fixture.date.split("T")[0] %> at <%= fixture.date.split("T")[1].split("+")[0] %>
+            </p>
+            <p>
+                <!-- Stadium -->
+                <%= fixture.venue.name %>
+            </p>
+            <p>
+                <!-- Competition -->
+                <%= league.name %>
+            </p>
+        </div>
+    </div>
+
+
+    <%- include('partials/bottomBoilerPlate') %>

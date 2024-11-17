@@ -1,0 +1,14 @@
+<%- include('partials/topBoilerPlate') %>
+
+<div class="entrance">
+    <h1>When is my team playing?</h1>
+    <form action="/findFixture" method="post">
+        <!-- <img src="/icons/search.svg" alt=""> -->
+        <input type="text" name="teamInput" placeholder="Search" id="search-bar" autocomplete="off">
+        <input type="submit" value="find" id="find-btn">
+    </form>
+    <p>Find out when and against who your team plays using the Football API</p>
+    <a href="https://dashboard.api-football.com/soccer/ids/teams" target="_blank">Click here to find your team's ID.</a>
+</div>
+
+<%- include('partials/bottomBoilerPlate') %>

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+h3 {
+    margin: 0 65px;
+    position: relative;
+    top: 60px;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+#search-bar {
+    border: .5px gainsboro solid;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    width: 530px;
+}
+
+#find-btn {
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+    transition: .4s;
+}
+
+#find-btn:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+.entrance h1 {
+    font-weight: 600;
+}
+
+.entrance > a {
+    color: black;
+}
+
+.entrance > a:hover {
+    text-decoration: none;
+}
+
+.entrance {
+    text-align: center;
+}
+
+.match-container {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.teams {
+    display: flex;
+    margin-top: 10px;
+}
+
+.match-data-container {
+    text-align: center;
+    font-weight: 600;
+}
+
+.team-name {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+}
